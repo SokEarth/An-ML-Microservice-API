@@ -5,13 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=soezeh/devops
+dockerpath=soezeh/devops3
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login
-docker --tag devops $dockerpath:latest
+docker --tag devops3 $dockerpath:latest
 
 # Step 3:
 # Push image to a docker repository

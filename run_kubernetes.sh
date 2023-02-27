@@ -4,14 +4,13 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=soezeh/devops
+dockerpath=soezeh/devops3
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run devops\
+kubectl run devops3\
     --image=$dockerpath
-    --port=80 --labels app=devops
-
+    --port=80 --labels app=devops3
 
 # Step 3:
 # List kubernetes pods
@@ -19,5 +18,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward devops 8000:80
+kubectl port-forward devops3 8000:80
 
